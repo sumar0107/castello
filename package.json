@@ -23,6 +23,33 @@
   "bugs": {
     "url": "https://github.com/wbkd/webpack-starter/issues"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -34,11 +61,16 @@
     "cross-env": "^7.0.2",
     "css-loader": "^3.5.2",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-loader": "^3.0.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "file-loader": "^5.1.0",
     "html-webpack-plugin": "^4.0.0-beta.11",
+    "husky": "^4.2.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
     "webpack": "^4.42.1",
@@ -48,6 +80,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "core-js": "^3.6.5"
+    "bootstrap": "^4.4.1",
+    "core-js": "^3.6.5",
+    "tippy.js": "^6.2.3"
   }
 }

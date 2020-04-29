@@ -1,0 +1,26 @@
+@import "./fonts";
+@import "./variables";
+#castello {
+  font-family: "GT Eesti Pro Display";
+  max-width: 1416px;
+  max-width: 1098px;
+  margin: 0 auto;
+  padding-top: 34px;
+  box-sizing: border-box;
+  position: relative;
+  * {
+    box-sizing: border-box;
+  }
+
+  @import "./bootstrap";
+  @import "./grid";
+  @import "./global";
+  @import "./title";
+  @import "./idea";
+  @import "./modal";
+  @import "./tooltip";
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,38 @@
+.title {
+  color: $black;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+
+  &_brown {
+    color: $brown2;
+  }
+
+  &_red {
+    color: $red;
+  }
+
+  &_big {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    @include media-breakpoint-up(sm) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  &_small {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+  }
+
+  &_text-center {
+    text-align: center;
+  }
+}

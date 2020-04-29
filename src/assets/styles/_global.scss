@@ -1,0 +1,27 @@
+.logo {
+  margin: 0 auto 30px;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 74px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    @include media-breakpoint-up(sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+.packs {
+  margin: 0 auto 30px;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 74px;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
