@@ -320,6 +320,25 @@
       &:hover {
         text-decoration: none;
       }
+      &.idea__how-cook-link {
+        color: $brown2;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        span {
+          display: block;
+        }
+
+        img {
+          display: block;
+          margin-left: 5px;
+        }
+      }
     }
 
     &-wrapper {
