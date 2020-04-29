@@ -2,13 +2,12 @@
   "name": "webpack-starter",
   "version": "1.0.0",
   "description": "A light foundation for your next frontend project based on webpack.",
+  "homepage": "https://sumar0107.github.io/castello",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "webpack",
@@ -65,6 +64,7 @@
     "eslint-loader": "^3.0.3",
     "eslint-plugin-prettier": "^3.1.2",
     "file-loader": "^5.1.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.0.0-beta.11",
     "husky": "^4.2.1",
     "mini-css-extract-plugin": "^0.9.0",
