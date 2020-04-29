@@ -485,6 +485,23 @@ a#castello .idea__badge:focus {
 #castello .idea__border-block a:hover {
   text-decoration: none;
 }
+#castello .idea__border-block a.idea__how-cook-link {
+  color: #c8a25b;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#castello .idea__border-block a.idea__how-cook-link span {
+  display: block;
+}
+#castello .idea__border-block a.idea__how-cook-link img {
+  display: block;
+  margin-left: 5px;
+}
 #castello .idea__border-block-wrapper h3 {
   color: #c8a25b;
   font-size: 20px;
